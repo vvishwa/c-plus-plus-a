@@ -10,7 +10,7 @@ class point {
    private:
       double x, y;
 };
-ostream& operator << (ostream& out, point& p) {
+friend ostream& operator << (ostream& out, const point& p) {
       out << "( " << p.getx() << ", " << p.gety() << " )";
       return out;
 }
